@@ -95,8 +95,8 @@ q5Btn.addEventListener('click', function(){
 
     let expDate = new Date(now.getFullYear(), 7, 14);
     let diff = expDate.getTime() - now.getTime();
-    let daysLeft = Math.ceil(diff / (1000*3600*24));
-    answer.innerHTML = `Answer: <b> ${daysLeft} </b> days are left before 14th August 2024`;
+    let daysLeft = Math.round(diff / (1000*3600*24));
+    answer.innerHTML = `Answer: <b> ${daysLeft} </b> days left until 14th August 2024`;
 })
 
 
